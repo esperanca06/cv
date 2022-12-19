@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --principal-cor: rgb(72, 83, 224);
+    --segunda-cor: rgb(209, 207, 68);
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+    background-color: white;
+    z-index: 2;
+}
+
+header h2{
+    color: var(--principal-cor);
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  
+    align-items: center;
+    width: 50vw;
+    height: 5vh;
+}
+
+.list-item{
+    text-decoration: none;
+    color: black;
+
+}
+
+.list-item:hover{
+    color: var(--principal-cor);
+}
+
+#inicio{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15vh;
+    margin-bottom: 5rem;
+    background-color: var(--principal-cor);
+}
+
+.inicio-title{
+    font-size: 2rem;
+    color: white;
+}
+.inicio-title span{
+    color: var(--segunda-cor);
+}
+
+.inicio-div{
+    height: 20vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-div-img{
+    height: 40vh;
+    width: 30vw;
+    z-index: 0;
+}
+
+.inicio-div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#sobremim{
+   
+    height: 90vh;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 15vh;
+    margin-bottom: 3rem;
+    color: var(--principal-cor);
+}
+.title div{
+    background-color:  var(--principal-cor);
+    height: 0.5vh;
+    width: 7vw;
+    margin-top: 10px;
+}
+
+.paragrafo{
+    margin-top: 2vh;
+    text-align: justify;
+    padding: 3vh;
+}
+
+
+#habilidades{
+    height: 100vh;
+}
+
+.habilidades-divs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.div-logotipos{
+    margin-top: 2rem;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logotipos{
+    height: 15vh;
+}
+
+#contactos{
+    background-color: var(--principal-cor);
+    height: 90vh;
+}
+
+.div-main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.title-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 5vh;
+    color: white;
+}
+.title-footer div{
+    background-color:  white;
+    height: 0.5vh;
+    width: 7vw;
+    margin-top: 10px;
+}
+
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5vh;
+    width: 50vw;
+    height: 40vh;
+}
+
+.form-item{
+    border: none;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button{
+    width: 30vw;
+    background-color: var(--segunda-cor);
+    align-self: center;
+    cursor: pointer;
+}
+
+.redes-div{
+    margin-top: 5vh;
+}
+
+.subtitle{
+    color: white;
+}
+
+.div-links{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center
+    ;
+    justify-content: space-around;
+}
+.link-img{
+    height: 5vh;
+}
+
+@media (min-width: 990px) {
+
+    #inicio{
+        flex-direction: row;
+    }
+    .list{
+        width: 30vw;
+    }
+    
+    .inicio-div-img{
+        height: 70vh;
+        width: 30vw;
+    }
+    .inicio-div{
+        width: 40vw;
+    }
+}
